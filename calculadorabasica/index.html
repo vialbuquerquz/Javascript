@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./index.js"></script>
+    <title>Calculadora básica com javascript</title>
+    <style>
+        body{
+            display: block;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h1> Calculadora Básica </h1>
+    <label> Insira um valor </label>
+    <input type="text" name="primeirovalor" id="primeironumero">
+    <br>
+    <br>
+    <label> Insira outro valor </label>
+    <input type="text" name="segundovalor" id="segundonumero">
+    
+    <h3> Qual operação deseja realizar? </h3>
+    <input type="submit" onCLick="somar()" value="soma">
+    <input type="submit" onClick="subtracao()" value="subtração">
+    <input type="submit" onCLick="multiplicacao()" value="multiplicação">
+    <input type="submit" onCLick="divisao()" value="divisão">
+    <p id="resultado"></p>
+</body>
+</html>
